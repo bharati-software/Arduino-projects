@@ -35,14 +35,20 @@ void loop() {
     //Serial.println(count);
   }
 
-  digit_pos = 1;
   number = count % MAX_COUNT_VALUE;
-  do{
+
+  if(number == 0){
+    display_digit(0,1);
+  }
+
+  digit_pos = 1;
+  while(number){
     display_digit(number%10,digit_pos);
     digit_pos++;
     delay(5);
     number = number / 10;
-  }while(number);
+  }
+
 }
 
 
