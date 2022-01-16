@@ -20,7 +20,7 @@
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600); 
-  sevent_seg_display_pin_setup();
+  seven_seg_display_pin_setup();
   pinMode(PIN_BUTTON,INPUT);
 }
 
@@ -52,7 +52,7 @@ void loop() {
 }
 
 
-void sevent_seg_display_pin_setup(void)
+void seven_seg_display_pin_setup(void)
 {
   pinMode(PIN_SEGMENT_A,OUTPUT);
   pinMode(PIN_SEGMENT_B,OUTPUT);
